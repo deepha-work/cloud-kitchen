@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>HomeMaded | Homestyle South Indian Cloud Kitchen</title>
+    <meta name="title" content="HomeMaded | Homestyle South Indian Cloud Kitchen" />
+    <meta name="description" content="Authentic, homestyle South Indian food cooked fresh in small batches. Naturally fermented stone-ground batters, pure cow ghee, and banana-leaf packed meals delivered hot." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <!-- Top Announcement Bar -->
+    <aside class="announcement-bar" id="announcement-bar">
+      <div class="container announcement-inner">
+        <span class="live-pulse"></span>
+        <p class="announcement-text">
+          <strong>Home Kitchen is Open:</strong> Fresh evening batch cooking now • Use code <span class="badge-code">FIRSTBITE</span> for 15% off
+        </p>
+        <span class="delivery-time-tag">Avg. delivery: <strong>32 mins</strong></span>
+      </div>
+    </aside>
+
+    <!-- Main Navigation Header -->
+    <header class="site-header" id="site-header">
+      <div class="container header-container">
+        
+        <!-- Logo Slot (Clean & easily replaceable with custom logo) -->
+        <a href="#" class="brand-logo" id="brand-logo" aria-label="HomeMaded Home">
+          <!-- Default SVG brand logo. When user provides their logo, this can be swapped or custom file loaded -->
+          <div class="logo-wrapper" id="logo-container">
+            <svg class="logo-mark" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="22" cy="22" r="21" fill="var(--color-primary)"/>
+              <path d="M12 21 C12 32, 32 32, 32 21 Z" fill="#FFFFFF"/>
+              <rect x="14" y="18" width="16" height="3" rx="1.5" fill="#FFFFFF"/>
+              <path d="M18 14 C17 11, 20 8, 19 5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+              <path d="M24 13 C23 9, 26 7, 25 4" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <div class="logo-text-group">
+              <span class="brand-name">Home<span class="highlight">Maded</span></span>
+              <span class="brand-tagline">SOUTH INDIAN CLOUD KITCHEN</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="desktop-nav" aria-label="Primary Navigation">
+          <ul class="nav-list">
+            <li><a href="#story" class="nav-link">Our Story</a></li>
+            <li><a href="#menu" class="nav-link">Today's Menu</a></li>
+            <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+            <li><a href="#kitchen-info" class="nav-link">Our Kitchen</a></li>
+          </ul>
+        </nav>
+
+        <!-- Header Actions: Meal Box Drawer Trigger -->
+        <div class="header-actions">
+          <!-- Meal Box / Cart Button -->
+          <button id="cart-drawer-toggle" class="btn-cart" aria-label="View Meal Box">
+            <svg class="cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="cart-label">Meal Box</span>
+            <span class="cart-count-badge" id="cart-count">0</span>
+          </button>
+
+          <!-- Mobile Hamburger Menu Button -->
+          <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Open mobile navigation">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+        <ul class="mobile-nav-list">
+          <li><a href="#story" class="mobile-nav-link">Our Story</a></li>
+          <li><a href="#menu" class="mobile-nav-link">Today's Menu</a></li>
+          <li><a href="#how-it-works" class="mobile-nav-link">How It Works</a></li>
+          <li><a href="#kitchen-info" class="mobile-nav-link">Our Kitchen</a></li>
+        </ul>
+        <div class="mobile-nav-actions">
+          <a href="#menu" class="btn-primary w-full text-center">Order Fresh Meal</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Flow -->
+    <main id="main-content">
+      
+      <!-- HERO SECTION -->
+      <section class="hero-section" id="hero">
+        <div class="container hero-container">
+          <div class="hero-copy-column">
+            
+            <div class="hero-badge-pill">
+              <span class="pill-dot"></span>
+              <span>Authentic Amma's Style • Zero Pre-Mixes</span>
+            </div>
+
+            <h1 class="hero-title">
+              South Indian home cooking, straight from our kitchen to your table.
+            </h1>
+
+            <p class="hero-description">
+              No dining tables. No preservatives. Just 14-hour stone-ground fermented batters, cold-pressed sesame oil, and fragrant curries packed fresh in banana leaves.
+            </p>
+
+            <div class="hero-actions-row">
+              <a href="#menu" class="btn-primary btn-large">
+                <span>Explore Today's Menu</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow-icon"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="#story" class="btn-secondary btn-large">
+                <span>Our Story</span>
+              </a>
+            </div>
+
+            <!-- Quick Trust Metrics -->
+            <div class="hero-metrics-grid">
+              <div class="metric-item">
+                <span class="metric-value">100%</span>
+                <span class="metric-label">Stone-Ground Batter</span>
+              </div>
+              <div class="metric-divider"></div>
+              <div class="metric-item">
+                <span class="metric-value">0%</span>
+                <span class="metric-label">Soda or Preservatives</span>
+              </div>
+              <div class="metric-divider"></div>
+              <div class="metric-item">
+                <span class="metric-value">32m</span>
+                <span class="metric-label">Average Delivery</span>
+              </div>
+              <div class="metric-divider"></div>
+              <div class="metric-item">
+                <span class="metric-value">4.9 ★</span>
+                <span class="metric-label">2,400+ Happy Families</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero Visual Column -->
+          <div class="hero-visual-column">
+            <div class="hero-card-frame">
+              <img 
+                src="./images/hero-dosa.jpg" 
+                alt="Golden crispy Ney Roast Dosa with three chutneys and hot sambar on banana leaf" 
+                class="hero-food-img" 
+                loading="eager"
+                onerror="this.onerror=null; if(this.src.indexOf('public/') === -1) { this.src = './public' + this.src.substring(this.src.lastIndexOf('/images')); }"
+              />
+              <div class="hero-floating-tag">
+                <div class="floating-tag-avatar">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                </div>
+                <div class="floating-tag-text">
+                  <strong>Ney Roast Paper Dosa</strong>
+                  <span>Includes: Dosa (1), Sambar, 3 Chutneys</span>
+                </div>
+                <button class="quick-add-btn" data-add-id="item-2" title="Add to Meal Box" aria-label="Add to Meal Box">
+                  <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="8" y1="2" x2="8" y2="14"></line>
+                    <line x1="2" y1="8" x2="14" y2="8"></line>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHAPTER 2: STORYTELLING SECTION -->
+      <section class="story-section section-padding" id="story">
+        <div class="container">
+          
+          <div class="section-header text-center">
+            <span class="section-kicker">THE STORY OF HOMEMADED</span>
+            <h2 class="section-title">Why a <span class="highlight-serif-italic">Cloud Kitchen?</span> Because flavor deserves full focus.</h2>
+            <p class="section-subtitle">
+              Most restaurants spend 70% of their energy on decor, valet parking, and crowded dining rooms. We stripped away the noise to invest 100% into ingredients, heritage techniques, and pure homestyle taste.
+            </p>
+          </div>
+
+          <div class="story-showcase-wrapper">
+            <!-- Background Dashed Connecting Trail -->
+            <svg class="story-dashed-trail" viewBox="0 0 800 500" fill="none" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M 180 120 C 380 90, 480 200, 620 180 C 720 170, 700 360, 420 340 C 260 330, 200 440, 250 460 C 320 480, 520 460, 620 440" stroke="#DDD7CF" stroke-width="2" stroke-dasharray="7 7" stroke-linecap="round" fill="none" />
+            </svg>
+
+            <div class="story-floating-grid">
+              
+              <!-- Card 1 -->
+              <article class="floating-story-card">
+                <div class="card-top-coin" aria-hidden="true">
+                  <div class="coin-disk disk-back"></div>
+                  <div class="coin-disk disk-front"></div>
+                </div>
+                <div class="card-inner-box">
+                  <h3 class="floating-card-title">Stone-Ground Batter</h3>
+                  <p class="floating-card-text">
+                    Real batter takes time. Whole urad dal and Ponni rice are slowly ground on traditional granite stones and fermented naturally overnight without baking soda. Soft, light, and easy on your stomach.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Card 2 -->
+              <article class="floating-story-card">
+                <div class="card-top-coin" aria-hidden="true">
+                  <div class="coin-disk disk-back"></div>
+                  <div class="coin-disk disk-front"></div>
+                </div>
+                <div class="card-inner-box">
+                  <h3 class="floating-card-title">Clay Pot Simmer</h3>
+                  <p class="floating-card-text">
+                    Our sambars and curries simmer unhurried in seasoned earthenware over gentle flames. Spices release their rich oils naturally, without chemical tastemakers or artificial food coloring.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Card 3 -->
+              <article class="floating-story-card">
+                <div class="card-top-coin" aria-hidden="true">
+                  <div class="coin-disk disk-back"></div>
+                  <div class="coin-disk disk-front"></div>
+                </div>
+                <div class="card-inner-box">
+                  <h3 class="floating-card-title">Pure Ghee & Cold-Pressed Oils</h3>
+                  <p class="floating-card-text">
+                    We cook strictly with cold-pressed gingelly oil, fresh coconut oil, and golden desi ghee. Zero palm oil, zero adulteration—clean, honest homestyle food you can comfortably enjoy every day.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Card 4 -->
+              <article class="floating-story-card">
+                <div class="card-top-coin" aria-hidden="true">
+                  <div class="coin-disk disk-back"></div>
+                  <div class="coin-disk disk-front"></div>
+                </div>
+                <div class="card-inner-box">
+                  <h3 class="floating-card-title">Fresh Banana Leaf Wrap</h3>
+                  <p class="floating-card-text">
+                    Straight from our cast-iron tawa, your hot food is carefully nestled inside fresh banana leaves before boxing. Natural warmth and aroma stay locked in with zero plastic touching your meal.
+                  </p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- Story Quote Callout -->
+          <div class="story-quote-banner">
+            <div class="quote-mark">“</div>
+            <p class="quote-text">
+              We cook in small batches of 20 to 30 portions at a time. Once a pot is empty, we simmer the next. That’s how real home food stays alive.
+            </p>
+            <span class="quote-author">— Lakshmi Amma, Head Cook at HomeMaded</span>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CHAPTER 3: INTERACTIVE DAILY MENU BOARD -->
+      <section class="menu-section section-padding" id="menu">
+        <div class="container">
+          
+          <div class="section-header text-center">
+            <span class="section-kicker">TODAY'S HOME MENU</span>
+            <h2 class="section-title">Small-batch signatures simmering today</h2>
+            <p class="section-subtitle">
+              Cooked fresh to order in our clean home kitchen. Select your favorite dishes to add them to your Meal Box.
+            </p>
+          </div>
+
+          <!-- Category Filter Tabs -->
+          <div class="menu-tabs-wrapper">
+            <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+              <button class="menu-tab-btn active" data-category="all" role="tab" aria-selected="true">
+                All Signatures
+              </button>
+              <button class="menu-tab-btn" data-category="tiffins" role="tab" aria-selected="false">
+                Morning & Tiffins
+              </button>
+              <button class="menu-tab-btn" data-category="meals" role="tab" aria-selected="false">
+                Feasts & Biryani
+              </button>
+              <button class="menu-tab-btn" data-category="snacks" role="tab" aria-selected="false">
+                Bites & Filter Kaapi
+              </button>
+            </div>
+          </div>
+
+          <!-- Menu Grid (Populated dynamically and statically accessible) -->
+          <div class="menu-grid" id="menu-items-grid">
+            <!-- Cards will be rendered and managed by JS for snappy state, but initialized for immediate SSR-like speed -->
+          </div>
+
+          <!-- Dietary Note & Customization Banner -->
+          <div class="dietary-note-bar">
+            <div class="dietary-badges-row">
+              <span class="pill-badge veg-badge"><span class="badge-dot"></span> 100% Traditional Vegetarian</span>
+              <span class="pill-badge"><span class="badge-dot"></span> Naturally Gluten-Free Options</span>
+              <span class="pill-badge"><span class="badge-dot"></span> Jain Preparation on Request</span>
+            </div>
+            <p class="dietary-caption">Have allergies or spice level preferences? Mention it during checkout notes.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CHAPTER 4: HOW THE CLOUD KITCHEN WORKS -->
+      <section class="how-it-works-section section-padding" id="how-it-works">
+        <div class="container">
+          
+          <div class="section-header text-center">
+            <span class="section-kicker">SIMPLE & HOMESTYLE</span>
+            <h2 class="section-title">From our tawa to your doorstep in three simple steps</h2>
+            <p class="section-subtitle">
+              Cooked fresh with care, packed hot in banana leaves, and delivered straight to your home.
+            </p>
+          </div>
+
+          <div class="bento-timeline-grid">
+            
+            <!-- Column 1 (Left): Step 1 Text + Food Photo -->
+            <div class="bento-col bento-col-left">
+              <article class="bento-card bento-text-card">
+                <span class="bento-step-pill">01 · CAST-IRON TAWA</span>
+                <h3 class="bento-title">You Order, The Tawa Heats Up</h3>
+                <p class="bento-desc">
+                  We never store pre-cooked food under heat lamps. The moment your order arrives, fresh stone-ground batter is poured on seasoned cast-iron pans.
+                </p>
+              </article>
+
+              <div class="bento-card bento-img-card">
+                <img src="./images/hero-dosa.jpg" onerror="this.onerror=null; this.src='./public/images/hero-dosa.jpg';" alt="Crispy Ney Roast Dosa on seasoned cast-iron tawa" loading="lazy">
+                <div class="bento-food-tag">
+                  <div class="bento-food-info">
+                    <strong class="bento-food-name">Ney Roast Paper Dosa</strong>
+                    <span class="bento-food-price">₹140 · Hot from Tawa</span>
+                  </div>
+                  <button class="quick-add-btn" data-add-id="item-2" title="Add Ney Roast Dosa to Meal Box" aria-label="Add Ney Roast Dosa to Meal Box">
+                    <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <line x1="8" y1="2" x2="8" y2="14"></line>
+                      <line x1="2" y1="8" x2="14" y2="8"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Column 2 (Center): Tall Hero Card - Step 2 -->
+            <div class="bento-col bento-col-center">
+              <article class="bento-card bento-tall-card">
+                <div>
+                  <span class="bento-step-pill">02 · STEAM & LEAF WRAP</span>
+                  <h3 class="bento-title">Packed in Fresh Banana Leaves</h3>
+                 
+                  
+                  <div class="bento-feature-group">
+                    <div class="bento-feature-item">
+                      <strong>Flame-Wilted Plantain Leaf</strong>
+                      <p>Natural steam releases subtle plant polyphenols, infusing food with rich traditional flavor.</p>
+                    </div>
+                    <div class="bento-feature-item">
+                      <strong>100% Bagasse Eco-Boxes</strong>
+                      <p>Sugarcane fiber containers that breathe naturally. Zero soggy plastic touches your meal.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bento-inner-img">
+                  <img src="./images/idli-vada.jpg" onerror="this.onerror=null; this.src='./public/images/idli-vada.jpg';" alt="Steaming Idli and crispy Medu Vada served on fresh banana leaf" loading="lazy">
+                  <div class="bento-food-tag">
+                    <div class="bento-food-info">
+                      <strong class="bento-food-name">Ghee Podi Thatte Idli</strong>
+                      <span class="bento-food-price">₹110 · Freshly Steamed</span>
+                    </div>
+                    <button class="quick-add-btn" data-add-id="item-1" title="Add Thatte Idli to Meal Box" aria-label="Add Thatte Idli to Meal Box">
+                      <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="8" y1="2" x2="8" y2="14"></line>
+                        <line x1="2" y1="8" x2="14" y2="8"></line>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Column 3 (Right): Food Photo + Step 3 Text -->
+            <div class="bento-col bento-col-right">
+              <div class="bento-card bento-img-card">
+                <img src="./images/biryani-pot.jpg" onerror="this.onerror=null; this.src='./public/images/biryani-pot.jpg';" alt="Slow-cooked homestyle Biryani pot simmered to perfection" loading="lazy">
+                <div class="bento-food-tag">
+                  <div class="bento-food-info">
+                    <strong class="bento-food-name">Clay-Pot Dum Biryani</strong>
+                    <span class="bento-food-price">₹280 · Slow Cooked</span>
+                  </div>
+                  <button class="quick-add-btn" data-add-id="item-3" title="Add Dum Biryani to Meal Box" aria-label="Add Dum Biryani to Meal Box">
+                    <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <line x1="8" y1="2" x2="8" y2="14"></line>
+                      <line x1="2" y1="8" x2="14" y2="8"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <article class="bento-card bento-text-card">
+                <span class="bento-step-pill">03 · HOT HOME DISPATCH</span>
+                <h3 class="bento-title">Hot Home Delivery in 32 Mins</h3>
+                <p class="bento-desc">
+                  Dispatched immediately in insulated thermal bags within an 8km radius, arriving piping hot right at your dining table.
+                </p>
+              </article>
+            </div>
+
+          </div>
+
+          <!-- Interactive Delivery Pincode Checker -->
+          <div class="pincode-card" id="pincode-checker-box">
+            <div class="pincode-card-content">
+              <div class="pincode-header">
+                <svg class="pincode-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <div>
+                  <h3 class="pincode-card-title">Check Delivery to Your Home</h3>
+                  <p class="pincode-card-desc">We deliver hot meals within 8 km of our local home kitchens. Enter your 6-digit pin code below:</p>
+                </div>
+              </div>
+
+              <form id="pincode-form" class="pincode-form">
+                <div class="pincode-input-group">
+                  <input 
+                    type="text" 
+                    id="pincode-input" 
+                    placeholder="Enter 6-digit PIN (e.g. 560034, 600028)" 
+                    maxlength="6" 
+                    pattern="[0-9]{6}" 
+                    required 
+                    aria-label="Enter 6 digit pincode"
+                  />
+                  <button type="submit" class="btn-primary">
+                    <span>Verify Zone</span>
+                  </button>
+                </div>
+                <div id="pincode-result" class="pincode-result" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CHAPTER 5: CLOUD POD HYGIENE & DETAILS -->
+      <section class="kitchen-info-section section-padding" id="kitchen-info">
+        <div class="container">
+          
+          <div class="kitchen-info-grid">
+            
+            <div class="kitchen-text-col">
+              <span class="section-kicker">OUR KITCHEN & HYGIENE</span>
+              <h2 class="section-title">Cleanliness you’d trust for your own family.</h2>
+              <p class="section-subtitle">
+                Because we cook for your family, our standards are as caring and meticulous as your own home. Every corner of our kitchen is clean, open, and certified.
+              </p>
+
+              <div class="standards-list">
+                <div class="standard-item">
+                  <div class="standard-check-icon">✓</div>
+                  <div>
+                    <strong>100% Mineral RO Filtered Water</strong>
+                    <p>Every grain of rice, dal, and drop of sambar uses pristine filtered water.</p>
+                  </div>
+                </div>
+
+                <div class="standard-item">
+                  <div class="standard-check-icon">✓</div>
+                  <div>
+                    <strong>FSSAI Certified & Spotless Kitchen</strong>
+                    <p>License # 11224334000182 with hourly sanitized surfaces and chef health checks.</p>
+                  </div>
+                </div>
+
+                <div class="standard-item">
+                  <div class="standard-check-icon">✓</div>
+                  <div>
+                    <strong>Pure & Eco-Friendly Packaging</strong>
+                    <p>Plant-based sugarcane bagasse containers, fresh banana leaves, and unbleached paper cutlery.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Operating Shifts Table -->
+              <div class="shifts-card">
+                <h4 class="shifts-title">Daily Kitchen Cooking Timings</h4>
+                <div class="shift-row">
+                  <span class="shift-name">Morning Tiffin Shift</span>
+                  <span class="shift-time">07:00 AM – 11:30 AM</span>
+                </div>
+                <div class="shift-row">
+                  <span class="shift-name">Midday Feast Shift</span>
+                  <span class="shift-time">12:00 PM – 03:30 PM</span>
+                </div>
+                <div class="shift-row">
+                  <span class="shift-name">Evening & Dinner Shift</span>
+                  <span class="shift-time">05:30 PM – 10:30 PM</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Visual Showcase of Specialty Brew & Craft -->
+            <div class="kitchen-visual-col">
+              <div class="specialty-feature-card">
+                <img 
+                  src="./images/filter-kaapi.jpg" 
+                  alt="Traditional South Indian Filter Kaapi in brass dabara with froth" 
+                  class="specialty-feature-img"
+                  loading="lazy"
+                  onerror="this.onerror=null; if(this.src.indexOf('public/') === -1) { this.src = './public' + this.src.substring(this.src.lastIndexOf('/images')); }"
+                />
+                <div class="specialty-content">
+                  <span class="specialty-badge">BREWED HOURLY</span>
+                  <h3 class="specialty-title">Madurai Degree Filter Kaapi</h3>
+                  <p class="specialty-desc">
+                    Roasted Chikmagalur coffee beans ground coarse, infused in brass drip filters, frothed with thick country milk.
+                  </p>
+                  <button class="btn-outline-white" data-add-id="item-4">
+                    <span>Add to Box (₹65)</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CHAPTER 6: WORDS FROM REGULARS -->
+      <section class="testimonials-section section-padding">
+        <div class="container">
+          
+          <div class="section-header text-center">
+            <span class="section-kicker">NEIGHBORHOOD LOVE</span>
+            <h2 class="section-title">Feels like home, every single bite</h2>
+          </div>
+
+          <div class="testimonials-grid">
+            <div class="review-card">
+              <div class="stars-row">★★★★★</div>
+              <p class="review-body">
+                “Finally a place that doesn't put soda in their idlis! They arrive pillow-soft, and opening the banana leaf aroma reminds me of Sunday mornings at my grandma's in Tanjore.”
+              </p>
+              <div class="reviewer-meta">
+                <strong>Ananya Sundaram</strong>
+                <span>Architect • Indiranagar</span>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="stars-row">★★★★★</div>
+              <p class="review-body">
+                “The Chettinad Biryani in the clay pot is pure perfection. Not greased with heavy Dalda or artificial colors. You can eat it for lunch and feel energised instead of sluggish.”
+              </p>
+              <div class="reviewer-meta">
+                <strong>Karthik Raja</strong>
+                <span>Product Designer • HSR Layout</span>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="stars-row">★★★★★</div>
+              <p class="review-body">
+                “I order the Ney Roast Dosa at least 3 times a week for breakfast. Delivered steaming hot in under 30 minutes, and the coconut chutney tastes freshly grated 10 mins ago.”
+              </p>
+              <div class="reviewer-meta">
+                <strong>Priya Vasudevan</strong>
+                <span>Software Engineer • Koramangala</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CHAPTER 7: CALL TO ACTION BANNER -->
+      <section class="cta-banner-section">
+        <div class="container">
+          <div class="cta-inner-box">
+            <div class="cta-copy">
+              <h2 class="cta-heading">Ready for a real South Indian home meal today?</h2>
+              <p class="cta-sub">
+                Our evening batch is freshly ground and ready. Skip restaurant waiting lines and enjoy food that tastes just like home.
+              </p>
+            </div>
+            <div class="cta-actions">
+              <a href="#menu" class="btn-primary btn-large">Order From Today's Menu</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        
+        <div class="footer-col brand-col">
+          <div class="logo-wrapper">
+            <svg class="logo-mark" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="22" cy="22" r="21" fill="var(--color-primary)"/>
+              <path d="M12 21 C12 32, 32 32, 32 21 Z" fill="#FFFFFF"/>
+              <rect x="14" y="18" width="16" height="3" rx="1.5" fill="#FFFFFF"/>
+              <path d="M18 14 C17 11, 20 8, 19 5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+              <path d="M24 13 C23 9, 26 7, 25 4" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <div class="logo-text-group">
+              <span class="brand-name">Home<span class="highlight">Maded</span></span>
+              <span class="brand-tagline">SOUTH INDIAN CLOUD KITCHEN</span>
+            </div>
+          </div>
+          <p class="footer-tagline">
+            Honest homestyle South Indian food simmered in small batches and delivered hot in banana leaves.
+          </p>
+          <div class="fssai-pill">
+            <span>FSSAI Lic. 11224334000182</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#story">Our Story & Craft</a></li>
+            <li><a href="#menu">Today's Menu</a></li>
+            <li><a href="#how-it-works">Delivery Process</a></li>
+            <li><a href="#kitchen-info">Our Kitchen Standards</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Kitchen Locations</h4>
+          <ul class="footer-links">
+            <li>Central Home Kitchen: Koramangala 4th Block</li>
+            <li>East Kitchen: Indiranagar 100ft Rd</li>
+            <li>South Kitchen: HSR Sector 2</li>
+            <li>Direct Helpline: +91 98400 12345</li>
+            <li>Email: kitchen@homemaded.in</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Partner Delivery</h4>
+          <p class="footer-text-muted">Order directly through our site for zero platform markup, or find us on your favorite app:</p>
+          <div class="partner-badges">
+            <span class="partner-tag">Swiggy</span>
+            <span class="partner-tag">Zomato</span>
+            <span class="partner-tag">Dunzo</span>
+            <span class="partner-tag">Direct WhatsApp</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div class="container footer-bottom-inner">
+          <p>© 2026 HomeMaded Kitchens. All rights reserved.</p>
+          
+        </div>
+      </div>
+    </footer>
+
+    <!-- SLIDE-OVER MEAL BOX / CART DRAWER -->
+    <div class="cart-drawer-backdrop" id="cart-backdrop"></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-heading" role="dialog" aria-modal="true">
+      <div class="cart-drawer-header">
+        <div class="cart-header-title-group">
+          <h2 id="cart-heading" class="cart-heading">Your Meal Box</h2>
+          <span class="cart-items-count-text" id="cart-items-count-text">0 items</span>
+        </div>
+        <button id="close-cart-btn" class="btn-icon" aria-label="Close Meal Box">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Free Delivery Progress Bar -->
+      <div class="cart-free-delivery-tracker">
+        <div class="tracker-text-row">
+          <span id="tracker-text">Add ₹140 more for free delivery</span>
+          <span id="tracker-percentage">60%</span>
+        </div>
+        <div class="tracker-progress-track">
+          <div class="tracker-progress-fill" id="tracker-progress-fill" style="width: 60%"></div>
+        </div>
+      </div>
+
+      <!-- Items List -->
+      <div class="cart-items-list" id="cart-items-container">
+        <!-- Rendered by JS -->
+      </div>
+
+      <!-- Empty Cart State -->
+      <div class="cart-empty-state" id="cart-empty-state">
+        <div class="empty-icon-circle">🍲</div>
+        <h3>Your Meal Box is empty</h3>
+        <p>Explore our daily board and pick your homestyle South Indian favorites.</p>
+        <button id="cart-browse-menu-btn" class="btn-primary">Browse Menu</button>
+      </div>
+
+      <!-- Cart Footer / Summary -->
+      <div class="cart-drawer-footer" id="cart-footer">
+        
+        <!-- Promo Code Input -->
+        <div class="cart-promo-box">
+          <input type="text" id="promo-input" placeholder="Promo code (try FIRSTBITE)" uppercase />
+          <button id="apply-promo-btn" class="btn-secondary btn-sm">Apply</button>
+        </div>
+        <div id="promo-applied-message" class="promo-message"></div>
+
+        <!-- Bill Details -->
+        <div class="cart-bill-breakdown">
+          <div class="bill-row">
+            <span>Item Subtotal</span>
+            <span id="bill-subtotal">₹0</span>
+          </div>
+          <div class="bill-row" id="bill-discount-row" style="display: none;">
+            <span class="text-orange">Promo Discount (15%)</span>
+            <span class="text-orange" id="bill-discount">-₹0</span>
+          </div>
+          <div class="bill-row">
+            <span>Eco Banana Leaf Pack</span>
+            <span id="bill-packaging">₹15</span>
+          </div>
+          <div class="bill-row">
+            <span>Delivery Partner Fee</span>
+            <span id="bill-delivery">₹25</span>
+          </div>
+          <div class="bill-divider"></div>
+          <div class="bill-row bill-total-row">
+            <span>To Pay</span>
+            <span id="bill-total">₹0</span>
+          </div>
+        </div>
+
+        <button id="checkout-trigger-btn" class="btn-primary w-full btn-large">
+          <span>Proceed to Checkout</span>
+          <span id="btn-total-display">₹0</span>
+        </button>
+
+        <p class="cart-leaf-guarantee">
+          🌿 Sealed in fresh banana leaves • 100% Biodegradable
+        </p>
+
+      </div>
+    </aside>
+
+    <!-- CHECKOUT SIMULATION MODAL -->
+    <div class="modal-backdrop" id="checkout-modal-backdrop"></div>
+    <div class="modal-dialog" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-modal-title">
+      <div class="modal-header">
+        <h3 id="checkout-modal-title" class="modal-title">Complete Your Home Meal Order</h3>
+        <button id="close-checkout-modal" class="btn-icon" aria-label="Close Checkout">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <!-- Step 1: Delivery Address Details -->
+        <form id="checkout-form" class="checkout-form">
+          <div class="form-group">
+            <label for="order-name">Your Full Name</label>
+            <input type="text" id="order-name" placeholder="e.g. Ramesh Kumar" required />
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="order-phone">Contact Number</label>
+              <input type="tel" id="order-phone" placeholder="10-digit Mobile" required pattern="[0-9]{10}" />
+            </div>
+            <div class="form-group">
+              <label for="order-pincode">Pincode</label>
+              <input type="text" id="order-pincode" placeholder="e.g. 560034" required pattern="[0-9]{6}" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="order-address">Delivery Address / Flat / Floor</label>
+            <textarea id="order-address" rows="2" placeholder="e.g. Flat 302, Green Meadows, 5th Cross" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="order-notes">Kitchen Cooking Notes (Optional)</label>
+            <input type="text" id="order-notes" placeholder="e.g. Less spicy sambar, extra curry leaves" />
+          </div>
+
+          <div class="payment-method-selector">
+            <label class="form-label-bold">Payment Method</label>
+            <div class="payment-options">
+              <label class="payment-option-card">
+                <input type="radio" name="payment_method" value="upi" checked />
+                <span class="pay-label">
+                  <strong>Instant UPI / GPay / PhonePe</strong>
+                  <small>Fast & Zero Contact</small>
+                </span>
+              </label>
+              <label class="payment-option-card">
+                <input type="radio" name="payment_method" value="cod" />
+                <span class="pay-label">
+                  <strong>Cash / UPI on Delivery</strong>
+                  <small>Pay when hot box arrives</small>
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary w-full btn-large">
+            <span>Place Order Now</span>
+          </button>
+        </form>
+
+        <!-- Order Success State (revealed when submitted) -->
+        <div class="order-success-state" id="order-success-screen" style="display: none;">
+          <div class="success-icon-animation">🍲</div>
+          <h3 class="success-title">Order #HM-4821 Confirmed!</h3>
+          <p class="success-desc">
+            The tawa is sizzling! Our home cooks have received your order. Your meal will be packed in warm banana leaves and delivered hot shortly.
+          </p>
+          <div class="order-summary-box">
+            <div class="summary-line"><span>Estimated Delivery:</span> <strong>32 Minutes</strong></div>
+            <div class="summary-line"><span>Home Kitchen:</span> <strong>Central Home Kitchen #02</strong></div>
+            <div class="summary-line"><span>Packaging:</span> <strong>Eco Banana Leaf Hot-Pack</strong></div>
+          </div>
+          <button id="success-back-home-btn" class="btn-primary w-full">Back to Home Menu</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Main JavaScript Logic -->
+    <script src="./src/main.js"></script>
+  </body>
+</html>

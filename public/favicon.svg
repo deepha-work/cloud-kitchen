@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5722" />
+      <stop offset="100%" stop-color="#E64A19" />
+    </linearGradient>
+  </defs>
+  <!-- Background Circle (Flat) -->
+  <circle cx="50" cy="50" r="46" fill="url(#orangeGrad)"/>
+  
+  <!-- Traditional Clay Pot & Steam Silhouette -->
+  <!-- Pot Rim -->
+  <rect x="30" y="44" width="40" height="6" rx="3" fill="#FFFFFF" />
+  <!-- Pot Body -->
+  <path d="M26 50 C26 72, 74 72, 74 50 Z" fill="#FFFFFF" opacity="0.95"/>
+  <!-- Decorative Base Ring -->
+  <ellipse cx="50" cy="71" rx="14" ry="2.5" fill="#FFE0D1" />
+  
+  <!-- Steaming Swirls -->
+  <path d="M40 38 C38 33, 44 28, 41 22" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M50 36 C48 30, 54 25, 51 18" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M60 38 C58 33, 64 28, 61 22" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  
+  <!-- Small Curry Leaf accent -->
+  <path d="M50 48 Q56 46 58 52 Q52 54 50 48 Z" fill="#FF5722" />
+</svg>

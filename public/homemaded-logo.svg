@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" fill="none">
+  <!-- Mark icon -->
+  <g transform="translate(6, 6)">
+    <circle cx="24" cy="24" r="23" fill="#FF5722"/>
+    <path d="M14 22 C14 34, 34 34, 34 22 Z" fill="#FFFFFF"/>
+    <rect x="16" y="19" width="16" height="3" rx="1.5" fill="#FFFFFF"/>
+    <path d="M20 15 C19 12, 22 9, 21 6" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    <path d="M26 14 C25 10, 28 8, 27 5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    <path d="M24 23 C26 21, 28 24, 25 26 C23 25, 23 23, 24 23 Z" fill="#FF5722"/>
+  </g>
+  <!-- Typography -->
+  <text x="64" y="34" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="24" font-weight="800" letter-spacing="-0.5px" fill="currentColor">
+    Home<tspan fill="#FF5722">Maded</tspan>
+  </text>
+  <text x="65" y="47" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="9" font-weight="600" letter-spacing="2px" fill="currentColor" opacity="0.6">
+    SOUTH INDIAN CLOUD KITCHEN
+  </text>
+</svg>
